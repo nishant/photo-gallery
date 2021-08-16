@@ -1,0 +1,8 @@
+<lightgallery [settings]="settings" [onBeforeSlide]="onBeforeSlide">
+  <a *ngFor="let item of items" class="gallery-item"
+     [attr.href]="item.image"
+     [attr.data-sub-html]="replacePlaceholderText(item.title, item.location)">
+    <img class="img-responsive" src="{{ item.thumbnail }}" alt="Image Thumbnail"/>
+  </a>
+</lightgallery>
+

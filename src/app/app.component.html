@@ -1,0 +1,81 @@
+<div id="app">
+  <mat-toolbar class="mat-elevation-z8">
+    <button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
+      <mat-icon *ngIf="!sidenav.opened">menu</mat-icon>
+      <mat-icon *ngIf="sidenav.opened">close</mat-icon>
+    </button>
+    <div class="site-title">Photography by {{ this.AUTHOR }}</div>
+  </mat-toolbar>
+
+  <div>
+    <mat-sidenav-container>
+      <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
+
+        <img class="avatar mat-elevation-z8" src="https://www.st-andrews.ac.uk/dpl/1.5.0/assets/docs/images/placeholders/200x200.jpg" />
+
+        <h4 class="name">{{ this.AUTHOR }}</h4>
+        <p class="designation">Photographer</p>
+        <p class="location-profile">Branchburg, New Jersey</p>
+
+        <mat-divider></mat-divider>
+
+        <button mat-button class="menu-button">
+          <mat-icon>home</mat-icon>
+          <span>Home</span>
+        </button>
+        <button mat-button class="menu-button">
+          <mat-icon>info</mat-icon>
+          <span>About</span>
+        </button>
+
+        <mat-divider></mat-divider>
+
+        <button mat-button class="menu-button">
+          <mat-icon>folder_open</mat-icon>
+          <span>Folder 1</span>
+        </button>
+        <button mat-button class="menu-button">
+          <mat-icon>folder_open</mat-icon>
+          <span>Folder 2</span>
+        </button>
+        <button mat-button class="menu-button">
+          <mat-icon>folder_open</mat-icon>
+          <span>Folder 3</span>
+        </button>
+        <button mat-button class="menu-button">
+          <mat-icon>folder_open</mat-icon>
+          <span>Folder 4</span>
+        </button>
+        <button mat-button class="menu-button">
+          <mat-icon>folder_open</mat-icon>
+          <span>Folder 5</span>
+        </button>
+        <button mat-button class="menu-button">
+          <mat-icon>folder_open</mat-icon>
+          <span>Folder 6</span>
+        </button>
+        <button mat-button class="menu-button">
+          <mat-icon>folder_open</mat-icon>
+          <span>Folder 7</span>
+        </button>
+        <button mat-button class="menu-button">
+          <mat-icon>folder_open</mat-icon>
+          <span>Folder 8</span>
+        </button>
+        <button mat-button class="menu-button">
+          <mat-icon>folder_open</mat-icon>
+          <span>Folder 9</span>
+        </button>
+        <button mat-button class="menu-button">
+          <mat-icon>folder_open</mat-icon>
+          <span>Folder 10</span>
+        </button>
+      </mat-sidenav>
+      <mat-sidenav-content>
+        <div id="gallery-container">
+          <gallery></gallery>
+        </div>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+  </div>
+</div>

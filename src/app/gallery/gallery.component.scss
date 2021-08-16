@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+}
+
+.gallery-item {
+  margin: 3px;
+}
+
+.img-responsive {
+  $thumbnail-size: 250px;
+  height: $thumbnail-size;
+  width: $thumbnail-size;
+}
+
